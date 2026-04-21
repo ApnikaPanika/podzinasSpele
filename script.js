@@ -1,5 +1,6 @@
 const poga = document.querySelector('.js-poga');
 const bilde = document.querySelector('img');
+const audio = document.querySelector('audio')
 
 const buttonTexts = ['Nespied šeit','Tu esi zābaks', 'Lēns kā gliemezis, haha', "Netiec līdz?", "Pacenties bik labāk :P" ]
 let textIndex = 0
@@ -8,6 +9,8 @@ let movesTillScare = 6
 poga.addEventListener('mouseover', function(){
     if(movesTillScare === 0){
         bilde.style.display = "block";
+        audio.currentTime = 0
+        audio.play()
     }
 
     movesTillScare = movesTillScare - 1
