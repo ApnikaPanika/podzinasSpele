@@ -1,0 +1,34 @@
+body { 
+    background-color: cadetblue;
+    text-align: center;
+}
+
+.poga { 
+    position: absolute;
+    background-color: burlywood;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+}
+
+.poga:hover{
+    background-color: rgb(207, 160, 99);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.poga:active {
+    background-color: green;
+}
+
+img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
